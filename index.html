@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color:ghostwhite;  
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      border: 3px solid black;
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .header {
+      background-color:rgb(88, 164, 230);
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;  
+      margin-bottom: 30px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .media-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .media-container img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .media-container p {
+      margin-bottom: 20px;
+    }
+    
+    .media-container video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .survey-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Upin & Ipin</h1>
+    </div>
+
+    <div class="main-content">
+      <div class="media-container">
+        <audio src="videoplayback.mp3" controls>
+          Your browser does not support the audio element.
+        </audio>
+        <p>Soundtrack yang digunakan pada saat Upin & Ipin Pentas</p>
+
+        <video src="videoplayback.mp4" controls>
+          Your browser does not support the video element.
+        </video>
+        <p>Video Upin & Ipin Pentas</p>
+        <p>Upin & Ipin menampilkan pentas pada acara taman kanak"nya.</p>
+        <p>Akankah Upin & Ipin bersama teman akan menampilkan pentas lagi?
+            Tuliskan jawaban anda pada form ketika anda menekan tombol Survey dibawah.</p>
+
+        <img src="Upin Ipin poster.jpg" alt="Deskripsi Gambar">
+      </div>
+      <div class="survey-button">
+        <a class="btn btn-primary" href="form.html">Survey</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

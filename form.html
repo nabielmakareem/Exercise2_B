@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: ghostwhite;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: rgb(58, 124, 181);
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 3px solid black;
+      padding: 10px;
+    }
+
+    .form-container .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-container .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-container .form-group input,
+    .form-container .form-group select,
+    .form-container .form-group textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-container">
+          <div class="header">
+            <h1>Form</h1>
+          </div>
+          <form id="myForm">
+            <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" placeholder="Nama Anda" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Tanggal Lahir:</label>
+              <input type="date" id="birthdate" name="birthdate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="episode">Episode Favorit:</label>
+              <select id="episode" name="episode" class="form-control">
+                <option value="Upin & Ipin Balik Kampung">Upin & Ipin Balik Kampung</option>
+                <option value="Upin & Ipin Lebaran">Upin & Ipin Lebaran</option>
+                <option value="Upin & Ipin Pentas">Upin & Ipin Pentas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="favorite-character">Karakter yang Disukai:</label>
+              <div class="form-check">
+                <input type="radio" name="karakter" id="Upin" value="Upin" class="form-check-input">
+                <label for="doraemon" class="form-check-label">Upin</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="karakter" id="Ipin" value="Ipin" class="form-check-input">
+                <label for="nobita" class="form-check-label">Ipin</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="karakter" id="Fizi" value="Fizi" class="form-check-input">
+                <label for="shizuka" class="form-check-label">Fizi</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="karakter" id="Ehsan" value="Ehsan" class="form-check-input">
+                <label for="giant" class="form-check-label">Ehsan</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="karakter" id="Jarjit" value="Jarjit" class="form-check-input">
+                <label for="suneo" class="form-check-label">Jarjit</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Alamat:</label>
+              <textarea id="address" name="address" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="suggestion">Jawaban Anda:</label>
+              <textarea id="suggestion" name="suggestion" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div id="result-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
